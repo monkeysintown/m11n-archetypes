@@ -18,6 +18,13 @@
         <github.global.server>github</github.global.server>
     </properties>
 
+    <distributionManagement>
+        <repository>
+            <id>bintray</id>
+            <url>https://api.bintray.com/maven/cheetah/monkeysintown/m11n-archetypes</url>
+        </repository>
+    </distributionManagement>
+
     <developers>
         <developer>
             <id>vidakovic</id>
