@@ -9,7 +9,7 @@
                 <include>**/*.java</include>
             </includes>
         </fileSet>
-        <fileSet encoding="UTF-8">
+        <fileSet filtered="true" encoding="UTF-8">
             <directory>src/main/java</directory>
             <includes>
                 <include>**/*.ad*</include>
@@ -33,12 +33,17 @@
                 <include>**/*.xml</include>
             </includes>
         </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>src/site</directory>
+            <includes>
+                <include>**/*.adoc</include>
+            </includes>
+        </fileSet>
         <fileSet encoding="UTF-8">
             <directory>src/site</directory>
             <includes>
                 <include>**/*.css</include>
                 <include>**/*.png</include>
-                <include>**/*.adoc</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
