@@ -1,4 +1,4 @@
-1.0.2 (in progress)
+1.0.2
 
 - Minor fixes
 
