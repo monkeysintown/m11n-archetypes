@@ -22,6 +22,23 @@ mvn archetype:generate                                  \
 
 ## Configuration
 
+Configure Bintray's JCenter repository in your pom.xml:
+ 
+```xml
+...
+<repositories>
+    <repository>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+        <id>central</id>
+        <name>bintray</name>
+        <url>http://jcenter.bintray.com</url>
+    </repository>
+</repositories>
+...
+```
+
 Latest release:
 
 [ ![Download](https://api.bintray.com/packages/cheetah/monkeysintown/m11n-archetypes/images/download.svg) ](https://bintray.com/cheetah/monkeysintown/m11n-archetypes/_latestVersion)
