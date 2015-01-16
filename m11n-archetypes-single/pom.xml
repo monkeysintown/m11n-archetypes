@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.github.monkeysintown</groupId>
         <artifactId>m11n-archetypes</artifactId>
-        <version>1.0.2-SNAPSHOT</version>
+        <version>1.0.3-SNAPSHOT</version>
         <relativePath>../</relativePath>
     </parent>
 
