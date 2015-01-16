@@ -10,6 +10,11 @@ atlassian-ide-plugin.xml
 *.iml
 *.ipr
 *.iws
+### Gulp
+.tmp/
+app/bower_components/
+dist/
+node_modules/
 ### Other
 build.sh
 release.sh

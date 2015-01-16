@@ -243,6 +243,7 @@
 
     <modules>
         <module>m11n-archetypes-single</module>
+        <module>m11n-archetypes-angularjs</module>
         <!--
         <module>m11n-archetypes-multi-jpa</module>
         -->
