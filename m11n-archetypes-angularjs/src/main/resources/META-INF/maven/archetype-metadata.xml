@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="m11n-archetypes-angularjs"
+                      xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>src/main/assembly</directory>
+            <includes>
+                <include>**/*.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>app</directory>
+            <includes>
+                <include>**/*.txt</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>app</directory>
+            <includes>
+                <include>**/*.jade</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>app/parts</directory>
+            <includes>
+                <include>**/*.jade</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>app/layouts</directory>
+            <includes>
+                <include>**/*.jade</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>app/views</directory>
+            <includes>
+                <include>**/*.jade</include>
+            </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+            <directory>app/styles</directory>
+            <includes>
+                <include>**/*.less</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>app/po</directory>
+            <includes>
+                <include>**/*.pot</include>
+                <include>**/*.po</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>app/scripts</directory>
+            <includes>
+                <include>**/*.js</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory></directory>
+            <includes>
+                <include>README.md</include>
+                <include>bower.json</include>
+                <include>package.json</include>
+                <include>gulpfile.js</include>
+            </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+            <directory></directory>
+            <includes>
+                <include>karma.conf.js</include>
+                <include>.editorconfig</include>
+                <include>.jshintrc</include>
+                <include>karma-e2e.conf.js</include>
+                <include>.bowerrc</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>
