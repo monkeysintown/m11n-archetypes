@@ -70,6 +70,7 @@
         <fileSet encoding="UTF-8">
             <directory></directory>
             <includes>
+                <include>CHANGELOG.md</include>
                 <include>karma.conf.js</include>
                 <include>.editorconfig</include>
                 <include>.jshintrc</include>
