@@ -4,7 +4,7 @@
 
     <groupId>com.github.monkeysintown</groupId>
     <artifactId>m11n-archetypes</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <packaging>pom</packaging>
 
     <name>Monkeys in Town Archetypes</name>
@@ -218,7 +218,7 @@
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <pushReleases>true</pushReleases>
                         <noDeploy>false</noDeploy>
-                        <noReleaseBuild>true</noReleaseBuild>
+                        <noReleaseBuild>false</noReleaseBuild>
                         <noFeatureBuild>false</noFeatureBuild>
                         <noHotfixBuild>false</noHotfixBuild>
                         <useReleaseProfile>true</useReleaseProfile>

@@ -1,4 +1,8 @@
-1.0.3 (in progress)
+1.0.4
+
+- Fixed release builds (no tests for AngularJs projects)
+
+1.0.3
 
 - Added IntelliJ plugin archetype (with Maven build)
 - Added JBake archetype with Github Pages integration 
