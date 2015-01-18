@@ -2,6 +2,7 @@
 
 - Added IntelliJ plugin archetype (with Maven build)
 - Added JBake archetype with Github Pages integration 
+- JBake with AngularJs, code snippets as Gist or file reference with Highlight.js
 - Bug fixes
 
 1.0.2
