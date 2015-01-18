@@ -5,7 +5,7 @@
 
 'use strict';
 
-angular.module('${artifactId}', [
+angular.module('${rootArtifactId}', [
     'ngCookies',
     'ngAnimate',
     'ngTouch',

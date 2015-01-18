@@ -2,7 +2,7 @@
 
 'use strict';
 
-angular.module('${artifactId}').factory('StacktraceSvc', function () {
+angular.module('${rootArtifactId}').factory('StacktraceSvc', function () {
     // Service logic
     // ...
 

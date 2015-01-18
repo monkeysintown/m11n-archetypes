@@ -1,5 +1,5 @@
 'use strict';
 
-angular.module('${artifactId}').controller('NavbarCtrl', function () {
+angular.module('${rootArtifactId}').controller('NavbarCtrl', function () {
     // TODO: implement this
 });

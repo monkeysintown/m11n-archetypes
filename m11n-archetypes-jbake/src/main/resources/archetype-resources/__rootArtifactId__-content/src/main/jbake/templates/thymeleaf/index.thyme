@@ -1,8 +1,11 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
 <!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="header.thyme::head"/>
-<body>
+<body ng-app="${rootArtifactId}" ng-cloak="" ng-controller="AppCtrl">
 <div id="wrap">
     <div th:replace="menu.thyme::menu"></div>
     <div class="container">
@@ -10,17 +13,17 @@
             <h1>Blog</h1>
         </div>
 
-        <div th:each="post : ${published_posts}">
-            <a th:href='${post.uri}' href='href'><h1 th:text='${post.title}'>title</h1></a>
+        <div th:each="post : ${symbol_dollar}{published_posts}">
+            <a th:href='${symbol_dollar}{post.uri}' href='href'><h1 th:text='${symbol_dollar}{post.title}'>title</h1></a>
 
-            <p th:text='${#dates.format(post.date,"dd MMMM yyyy")}'>date</p>
+            <p th:text='${symbol_dollar}{${symbol_pound}dates.format(post.date,"dd MMMM yyyy")}'>date</p>
 
-            <p th:utext='${post.body}'>body</p>
+            <p th:utext='${symbol_dollar}{post.body}'>body</p>
         </div>
 
         <hr/>
 
-        <p>Older posts are available in the <a th:href='${config.archive_file}' href='href'>archive</a>.</p>
+        <p>Older posts are available in the <a th:href='${symbol_dollar}{config.archive_file}' href='href'>archive</a>.</p>
     </div>
 </div>
 

@@ -36,13 +36,6 @@
                     </includes>
                 </fileSet>
                 <fileSet encoding="UTF-8">
-                    <directory>app/images</directory>
-                    <includes>
-                        <include>**/*.ico</include>
-                        <include>**/*.png</include>
-                    </includes>
-                </fileSet>
-                <fileSet encoding="UTF-8">
                     <directory>app/parts</directory>
                     <includes>
                         <include>**/*.jade</include>
@@ -98,12 +91,30 @@
                     <directory>src/main/jbake</directory>
                     <includes>
                         <include>**/*.properties</include>
+                        <include>**/*.java</include>
+                    </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/main/jbake</directory>
+                    <includes>
+                        <include>**/*.ico</include>
+                        <include>**/*.png</include>
                     </includes>
                 </fileSet>
                 <fileSet filtered="true" encoding="UTF-8">
                     <directory>src/main/webapp</directory>
                     <includes>
                         <include>**/*.xml</include>
+                    </includes>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/jbake</directory>
+                    <includes>
+                        <include>**/header.ftl</include>
+                        <include>**/archive.thyme</include>
+                        <include>**/index.thyme</include>
+                        <include>**/page.thyme</include>
+                        <include>**/post.thyme</include>
                     </includes>
                 </fileSet>
                 <fileSet encoding="UTF-8">
@@ -113,6 +124,13 @@
                         <include>**/*.thyme</include>
                         <include>**/*.ftl</include>
                     </includes>
+                    <excludes>
+                        <exclude>**/header.ftl</exclude>
+                        <exclude>**/archive.thyme</exclude>
+                        <exclude>**/index.thyme</exclude>
+                        <exclude>**/page.thyme</exclude>
+                        <exclude>**/post.thyme</exclude>
+                    </excludes>
                 </fileSet>
             </fileSets>
         </module>

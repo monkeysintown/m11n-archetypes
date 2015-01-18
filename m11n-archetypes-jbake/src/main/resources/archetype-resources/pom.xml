@@ -319,6 +319,34 @@
 
     <profiles>
         <profile>
+            <id>jbake.all</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <modules>
+                <module>${rootArtifactId}-assets</module>
+                <module>${rootArtifactId}-content</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>jbake.assets</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <modules>
+                <module>${rootArtifactId}-assets</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>jbake.content</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <modules>
+                <module>${rootArtifactId}-content</module>
+            </modules>
+        </profile>
+        <profile>
             <id>release-profile</id>
             <activation>
                 <property>
