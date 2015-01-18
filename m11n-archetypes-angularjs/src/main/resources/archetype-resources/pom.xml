@@ -126,6 +126,30 @@
                 </plugin>
 
                 <plugin>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>2.6.1</version>
+                    <configuration>
+                        <filesets>
+                            <fileset>
+                                <directory>.tmp</directory>
+                            </fileset>
+                            <fileset>
+                                <directory>dist</directory>
+                            </fileset>
+                            <fileset>
+                                <directory>bower_components</directory>
+                            </fileset>
+                            <fileset>
+                                <directory>app/bower_components</directory>
+                            </fileset>
+                            <fileset>
+                                <directory>node_modules</directory>
+                            </fileset>
+                        </filesets>
+                    </configuration>
+                </plugin>
+
+                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
                     <version>2.5.3</version>
