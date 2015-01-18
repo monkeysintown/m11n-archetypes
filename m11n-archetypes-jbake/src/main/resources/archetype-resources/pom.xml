@@ -64,10 +64,11 @@
         <thymeleaf.version>2.1.4.RELEASE</thymeleaf.version>
     </properties>
 
+    <!-- NOTE: just deploy locally so that Maven doesn't complain; we just need this to trigger the Github site deployment -->
     <distributionManagement>
         <repository>
-            <id>bintray</id>
-            <url>https://api.bintray.com/maven/cheetah/monkeysintown/${artifactId}</url>
+            <id>m11n-local</id>
+            <url>file://${env.MAVEN_REPO}</url>
         </repository>
     </distributionManagement>
 
@@ -160,7 +161,7 @@
                             <goals>
                                 <goal>site</goal>
                             </goals>
-                            <phase>site</phase>
+                            <phase>deploy</phase>
                         </execution>
                     </executions>
                 </plugin>
@@ -241,10 +242,6 @@
                     <configuration>
                         <!-- web.xml is not mandatory since JavaEE 5 -->
                         <failOnMissingWebXml>false</failOnMissingWebXml>
-                        <!-- <filteringDeploymentDescriptors>true</filteringDeploymentDescriptors>
-                            <warSourceDirectory>WebContent</warSourceDirectory> <webResources> <resource>
-                            <directory>src/main/webapp2</directory> <filtering>true</filtering> </resource>
-                            </webResources> -->
                     </configuration>
                 </plugin>
 
@@ -282,7 +279,7 @@
                         <allowSnapshots>true</allowSnapshots>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <pushReleases>true</pushReleases>
-                        <noDeploy>true</noDeploy>
+                        <noDeploy>false</noDeploy>
                         <noReleaseBuild>false</noReleaseBuild>
                         <noFeatureBuild>false</noFeatureBuild>
                         <noHotfixBuild>false</noHotfixBuild>
