@@ -12,6 +12,7 @@
         <fileSet encoding="UTF-8">
             <directory></directory>
             <includes>
+                <include>.gitignore</include>
                 <include>LICENSE</include>
                 <include>release.sh</include>
                 <include>build.sh</include>
