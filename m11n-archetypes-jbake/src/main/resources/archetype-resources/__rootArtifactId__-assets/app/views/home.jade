@@ -1,0 +1,13 @@
+extends /layouts/_page
+block content
+    .row
+        .col-md-8.col-md-offset-2
+            .jumbotron
+                h1 Hello
+                p.lead
+                    p ... world!
+    .row
+        .col-md-6
+            div(hljs='', include="'samples/Person.java'", language='java', no-escape)
+        .col-md-6
+            div(hljs='', include="'samples/Person.java'", language='java')

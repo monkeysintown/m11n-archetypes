@@ -1,0 +1,22 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-transitional-thymeleaf-4.dtd">
+<html lang="en">
+<head th:fragment="head" xmlns:th="http://www.thymeleaf.org">
+    <meta charset="utf-8"/>
+    <title th:with="title=(${content.title != null} ? ${content.title} : 'Monkeys in Town')" th:text="${title}"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content="Aleksandar Vidakovic"/>
+    <meta name="keywords" content=""/>
+    <meta name="generator" content="JBake"/>
+
+    <!-- Le styles -->
+    <link th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'styles/site.css'" rel="stylesheet"/>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" rel="shortcut icon" th:href="${rootpath}+'images/favicon.ico'"/>
+</head>
+</html>
