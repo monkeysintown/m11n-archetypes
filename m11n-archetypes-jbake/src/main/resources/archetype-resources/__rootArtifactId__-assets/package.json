@@ -1,5 +1,5 @@
 {
-  "name": "m11n-archetypes-jbake-assets",
+  "name": "${artifactId}",
   "version": "1.0.0",
   "dependencies": {},
   "devDependencies": {

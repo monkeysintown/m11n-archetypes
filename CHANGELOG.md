@@ -1,3 +1,10 @@
+1.0.5
+
+- Fixed various inconsistencies in JBake archetype (artifactId filtering)
+- Added angular-gist in JBake archetype
+- Added Google Analytics in JBake archetype
+- Bug fixes
+
 1.0.4
 
 - Fixed release builds (no tests for AngularJs projects)

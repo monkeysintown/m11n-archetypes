@@ -11,7 +11,8 @@ angular.module('${rootArtifactId}', [
     'ngTouch',
     'ngSanitize',
     'ui.router',
-    'hljs'
+    'hljs',
+    'gist'
 ])
 .config(function (${symbol_dollar}locationProvider, ${symbol_dollar}stateProvider, ${symbol_dollar}urlRouterProvider, hljsServiceProvider) {
     ${symbol_dollar}locationProvider

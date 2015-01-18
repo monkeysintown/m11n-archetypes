@@ -60,7 +60,7 @@ gulp.task('html2js', function () {
             quotes: true
         }))
         .pipe(${symbol_dollar}.ngHtml2js({
-            moduleName: "${symbol_dollar}{artifactId}.views",
+            moduleName: "${artifactId}.views",
             prefix: "views/"
         }))
         .pipe(${symbol_dollar}.concat("views.tpl.js"))
