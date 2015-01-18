@@ -1,3 +1,9 @@
+1.0.3 (in progress)
+
+- Added IntelliJ plugin archetype (with Maven build)
+- Added JBake archetype with Github Pages integration 
+- Bug fixes
+
 1.0.2
 
 - Minor fixes
