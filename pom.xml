@@ -218,7 +218,7 @@
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <pushReleases>true</pushReleases>
                         <noDeploy>false</noDeploy>
-                        <noReleaseBuild>false</noReleaseBuild>
+                        <noReleaseBuild>true</noReleaseBuild>
                         <noFeatureBuild>false</noFeatureBuild>
                         <noHotfixBuild>false</noHotfixBuild>
                         <useReleaseProfile>true</useReleaseProfile>
