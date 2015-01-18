@@ -1,0 +1,49 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<idea-plugin version="2">
+    <id>${symbol_dollar}{project.artifactId}</id>
+    <name>${symbol_dollar}{project.name}</name>
+    <version>${symbol_dollar}{project.version}</version>
+    <vendor email="${symbol_dollar}{organization.email}" url="${symbol_dollar}{organization.url}">${symbol_dollar}{organization.name}</vendor>
+
+    <description>
+    <![CDATA[
+      ${symbol_dollar}{project.description}
+    ]]>
+    </description>
+
+    <change-notes>
+    <![CDATA[
+      No changes.
+    ]]>
+    </change-notes>
+
+    <actions>
+        <!-- The <group> element defines an action group. <action>, <group> and <separator> elements defined within it are automatically included in the group.
+                 The mandatory "id" attribute specifies an unique identifier for the action.
+                 The optional "class" attribute specifies the full-qualified name of the class implementing the group. If not specified,
+                 com.intellij.openapi.actionSystem.DefaultActionGroup is used.
+                 The optional "text" attribute specifies the text of the group (text for the menu item showing the submenu).
+                 The optional "description" attribute specifies the text which is displayed in the status bar when the group is focused.
+                 The optional "icon" attribute specifies the icon which is displayed on the toolbar button or next to the group.
+                 The optional "popup" attribute specifies how the group is presented in the menu. If a group has popup="true", actions in it
+                 are placed in a submenu; for popup="false", actions are displayed as a section of the same menu delimited by separators. -->
+        <group id="${package}" text="_Sample Menu [TODO]" description="[TODO] Menu description">
+            <!-- The <action> element defines an action to register.
+                 The mandatory "id" attribute specifies an unique identifier for the action.
+                 The mandatory "class" attribute specifies the full-qualified name of the class implementing the action.
+                 The mandatory "text" attribute specifies the text of the action (tooltip for toolbar button or text for menu item).
+                 The optional "use-shortcut-of" attribute specifies the ID of the action whose keyboard shortcut this action will use.
+                 The optional "description" attribute specifies the text which is displayed in the status bar when the action is focused.
+                 The optional "icon" attribute specifies the icon which is displayed on the toolbar button or next to the menu item. -->
+            <action id="{package}.TextBoxes" class="${package}.TextBoxes" text="Sample _Action [TODO]" description="[TODO] Action description" />
+            <!--
+            <add-to-group group-id="MainMenu" anchor="last"  />
+            <add-to-group group-id="ToolsMenu" relative-to-action="GenerateJavadoc" anchor="after"/>
+            -->
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </group>
+    </actions>
+
+</idea-plugin>

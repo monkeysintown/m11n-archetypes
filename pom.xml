@@ -4,7 +4,7 @@
 
     <groupId>com.github.monkeysintown</groupId>
     <artifactId>m11n-archetypes</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>pom</packaging>
 
     <name>Monkeys in Town Archetypes</name>
@@ -218,7 +218,7 @@
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <pushReleases>true</pushReleases>
                         <noDeploy>false</noDeploy>
-                        <noReleaseBuild>false</noReleaseBuild>
+                        <noReleaseBuild>true</noReleaseBuild>
                         <noFeatureBuild>false</noFeatureBuild>
                         <noHotfixBuild>false</noHotfixBuild>
                         <useReleaseProfile>true</useReleaseProfile>
@@ -246,6 +246,8 @@
     <modules>
         <module>m11n-archetypes-single</module>
         <module>m11n-archetypes-angularjs</module>
+        <module>m11n-archetypes-intellij</module>
+        <module>m11n-archetypes-jbake</module>
         <!--
         <module>m11n-archetypes-multi-jpa</module>
         -->
