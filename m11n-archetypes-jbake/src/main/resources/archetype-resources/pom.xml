@@ -147,6 +147,11 @@
                     <version>0.10</version>
                     <configuration>
                         <message>Creating site for ${project.version}</message>
+                        <branch>refs/heads/master</branch>
+                        <noJekyll>true</noJekyll>
+                        <repositoryOwner>${artifactId}</repositoryOwner>
+                        <repositoryName>${artifactId}.github.io</repositoryName>
+                        <outputDirectory>${project.build.directory}/${project.build.finalName}</outputDirectory>
                     </configuration>
                     <executions>
                         <execution>
@@ -345,28 +350,6 @@
             <modules>
                 <module>${rootArtifactId}-content</module>
             </modules>
-        </profile>
-        <profile>
-            <id>release-profile</id>
-            <activation>
-                <property>
-                    <name>performRelease</name>
-                    <value>true</value>
-                </property>
-            </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                    </plugin>
-
-                    <plugin>
-                        <groupId>com.github.github</groupId>
-                        <artifactId>site-maven-plugin</artifactId>
-                    </plugin>
-                </plugins>
-            </build>
         </profile>
     </profiles>
 </project>
