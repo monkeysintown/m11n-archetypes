@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <name>Monkeys in Town [TODO]</name>
     <description>[TODO]</description>
-    <url>https://monkeysintown.github.io/m11n-archetypes-jbake</url>
+    <url>https://monkeysintown.github.io/${artifactId}</url>
 
     <licenses>
         <license>
@@ -25,9 +25,9 @@
     </organization>
 
     <scm>
-        <connection>scm:git:https://github.com/monkeysintown/m11n-archetypes-jbake.git</connection>
-        <developerConnection>scm:git:https://github.com/monkeysintown/m11n-archetypes-jbake.git</developerConnection>
-        <url>scm:git:https://github.com/monkeysintown/m11n-archetypes-jbake.git</url>
+        <connection>scm:git:https://github.com/monkeysintown/${artifactId}.git</connection>
+        <developerConnection>scm:git:https://github.com/monkeysintown/${artifactId}.git</developerConnection>
+        <url>scm:git:https://github.com/monkeysintown/${artifactId}.git</url>
     </scm>
 
     <developers>
@@ -67,7 +67,7 @@
     <distributionManagement>
         <repository>
             <id>bintray</id>
-            <url>https://api.bintray.com/maven/cheetah/monkeysintown/m11n-archetypes-jbake</url>
+            <url>https://api.bintray.com/maven/cheetah/monkeysintown/${artifactId}</url>
         </repository>
     </distributionManagement>
 
